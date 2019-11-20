@@ -11,11 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
+
+require __DIR__.'/frontend.php';
+
 
 Route::get('/admin/login', 'Admin\LoginController@showAdminLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Admin\LoginController@adminLogin');
