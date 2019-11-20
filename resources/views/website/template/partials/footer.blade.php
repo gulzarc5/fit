@@ -1,5 +1,5 @@
 <!-- Newsletter Start -->
-<section class="newsletter_sec">
+{{-- <section class="newsletter_sec">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-12">
@@ -49,7 +49,7 @@
     </div>
 </div>
 </div>
-</section>
+</section> --}}
 <!-- Newsletter End -->
 
 <!-- Footer Start -->
@@ -88,9 +88,9 @@
                             </div>
                             <div class="footer-contant">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-chevron-circle-right"></i>Web Design</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-circle-right"></i>Web Development</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-circle-right"></i>Android Development</a></li>
+                                    <li><a href="{{route('website.web_design')}}"><i class="fa fa-chevron-circle-right"></i>Web Design</a></li>
+                                    <li><a href="{{route('website.php_train')}}"><i class="fa fa-chevron-circle-right"></i>Web Development</a></li>
+                                    <li><a href="{{route('website.andriod')}}"><i class="fa fa-chevron-circle-right"></i>Android Development</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="cop_p">
-                        <p>2018 - 19 Copy Right by xyz | Developed by <a href="https://www.Webinfotech.net.in/" target="_blank">Webinfotech</a></p>
+                        <p>2019 <a>FresherIT.com</a> copyright | Developed by <a href="https://www.Webinfotech.net.in/" target="_blank">Webinfotech</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6">

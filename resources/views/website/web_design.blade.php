@@ -205,7 +205,7 @@
                         </div>
                         <div class="flex"><p class="mb-1 t-red roboto f-500 price">₹7500<span class="old-price">₹10,000</span></p><span class="dur">2 months</span></div>
                         <div class="blog_side_title">
-                            <a href="Apply-Now"><h6>Apply Now</h6></a>
+                            <a href="{{route('website.applynow')}}"><h6>Apply Now</h6></a>
                         </div>
                         <div class="blog_category">
                             <a><i class="fa fa-check" aria-hidden="true"></i>Web graphic design</a>

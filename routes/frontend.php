@@ -39,3 +39,17 @@ Route::get('/Web-Development', function () {
 })->name('website.php_train');
 
 
+//=========== Web-Development ============// 
+
+Route::get('/Apply-Now', function () {
+    return view('website.applynow');
+})->name('website.applynow');
+
+
+//=========== Web-Development ============// 
+
+Route::get('/Confirm-Enrollment', function () {
+    return view('website.confirm');
+})->name('website.confirm');
+
+
