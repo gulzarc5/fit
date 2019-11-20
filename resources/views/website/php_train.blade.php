@@ -59,7 +59,7 @@
                                         <p>TPHP is the most widely used platform and language for developing dynamic websites and the demand for trained PHP professionals is on a constant rise. The demand is on peak and trained competent PHP developers are less.</p>
                                     </div><hr>
                                     <div class="course-ess">
-                                        <h4>Requirement : <span>10+2</span></h4>
+                                        <h4>Minimum Qualification : <span>10+2</span></h4>
                                         <h4>Duration : <span>3 months</span></h4>
                                     </div>
                                 </div>

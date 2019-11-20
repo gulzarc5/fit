@@ -60,7 +60,7 @@
                                         are in search of web designers who can provide dazzling and artistic website looks.</p>
                                     </div><hr>
                                     <div class="course-ess">
-                                        <h4>Requirement : <span>10+2</span></h4>
+                                        <h4>Minimum Qualification : <span>10+2</span></h4>
                                         <h4>Duration : <span>2 months</span></h4>
                                     </div>
                                 </div>

@@ -62,7 +62,7 @@
                                         android development.</p>
                                     </div><hr>
                                     <div class="course-ess">
-                                        <h4>Requirement : <span>10+2</span></h4>
+                                        <h4>Minimum Qualification : <span>10+2</span></h4>
                                         <h4>Duration : <span>2 months</span></h4>
                                     </div>
                                 </div>
@@ -80,9 +80,6 @@
                                             </div>
                                             <div id="collapseMessagesSetup" class="panel-collapse in collapse" style="">
                                                 <div class="card-body">
-                                                    <p class="course-summery-text"><span class="course-details-learn-text-span f-300">How Internet works ? </span></p>
-                                                    <p class="course-summery-text"><span class="course-details-learn-text-span f-300">What is DNS server</span></p>
-                                                    <p class="course-summery-text"><span class="course-details-learn-text-span f-300">Web server</span></p>
                                                     <p class="course-summery-text"><span class="course-details-learn-text-span f-300">Introduction to Core Java and OOP Concepts.</span></p>
                                                     <p class="course-summery-text"><span class="course-details-learn-text-span f-300">Installation and Configuration of Java and Android Studio.</span></p>
                                                     <p class="course-summery-text"><span class="course-details-learn-text-span f-300">Android Studio, IDE and Tools.</span></p>
@@ -238,7 +235,7 @@
                                 <img src="assets/images/education/services/3.jpg" alt="Web_design" class="img-fluid ">
                             </div>
                         </div>
-                        <div class="flex"><p class="mb-1 t-red roboto f-500 price">₹15,000<span class="old-price">₹12,500</span></p><span class="dur">3 months</span></div>
+                        <div class="flex"><p class="mb-1 t-red roboto f-500 price">₹12,000<span class="old-price">₹15,000</span></p><span class="dur">3 months</span></div>
                         <div class="blog_side_title">
                             <a href="Apply-Now"><h6>Apply Now</h6></a>
                         </div>
