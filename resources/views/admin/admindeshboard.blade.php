@@ -35,7 +35,7 @@
                                 <th class="column-title">Name</th>
                                 <th class="column-title">Email</th>
                                 <th class="column-title">Mobile No</th>
-                                <th class="column-title">Varification Status</th>
+                                <th class="column-title">Payment Status</th>
                                 <th class="column-title">Date</th>
                             </tr>
                         </thead>
