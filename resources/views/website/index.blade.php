@@ -23,13 +23,8 @@
 
         <div class="row center">
             <div class="span12">
-                <h2 class="short">Webinfotech is the <strong class="inverted">BEST</strong> choice for Freshers.</h2>
-                <p>
-                    Hi!   you are at webinfotech.com, India's first Web and App Development Institute which has the unmatched reputation of being the best PHP Trainers in Eastern India. We are based in Down town, Guwahati, a place which is the hub of software companies in north-east India. Apart from training in the latest technologies, we at IPEG Solutions, have collaborated with several US clients for whom we regularly develop quality websites. All web development companies in West Bengal give preference to our students due to our superior training quality and long term relations with them. Our very popular course is the MVT Course ( Advanced web technology with PHP, MySQL, Ajax and Joomla) with 100% job guarantee. Advanced technoloy training include J2ME, Mobile application development with Google Android etc. 
-
-                    <br><br>We also have the largest database of freshers looking for a job - you can register with your CV free of cost in just 3 minutes (Click <a href="submit_cv.php">here</a> to Submit CV). We also organize interviews for general freshers from time to time.  Approximately 35 Companies come and search for CVs on our website every month, for all jobs, programming, call center, designing etc. Freshers can contact us at +91-7086030335 / +91-9706868355
-                    or visit our Guwahati office for general enquiries. 
-                </p>
+                <h2 class="short">We are the <strong class="inverted">BEST</strong> choice for Freshers.</h2>
+            <p> We welcome you to the next level industrial training program in the NorthEast. FreshersIT is the place where you will be trained to meet the industrial standards of programming. We will push you to lead the required market knowledge and will ensure that you are ready for the IT industry to<br> work and lead.</p>
             </div>
         </div>
     </div>
@@ -138,71 +133,71 @@
     <!-- Our Course End -->
 
     <!-- Banner Start -->
-    <div class="col-xl-12 col-12 px-0 home-about-instaily-back" style="background: url(assets/images/Group162.jpg) !important;">
-        <div class="container">
-            <div class="col-xl-12 col-12 px-0 d-flex flex-wrap">
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pl-0">
-                    <p class="t-white oswald f-600 f-43 home-about-instaily-heading">About Webinfotech</p>
-                    <p class="t-white roboto f-400">We Are A Group Of Professional Programmers Having Extensive Experience Of Real World Programming, We Are Venturing Into The World Of Technical Training To Share Our Acquired Knowledge With Freshers.</p>
-                    <p class="t-white roboto f-400">Following Are Some Key Features Of Our Courses.</p>
-                    <div class="col-xl-10 col-10 px-0 d-flex flex-wrap home-about-instaily-list">
-                        <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
-                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Rest API Development Using Lumen and Laravel.</span></li>
-                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Version And Source Code Maintenance Using GIT.</span></li>
-                            <li class="d-flex justify-content-between">
-                                <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
-                                <span class="home-about-instaily-list-text">Importance Of OOPS And Architecture.</span>
-                            </li>
-                        </ul>
-                        <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
-                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Enterprise Application Development(CLOUD).</span></li>
-                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">SaaS Application Development Basics.</span></li>
-                            <li class="d-flex justify-content-between">
-                                <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
-                                <span class="home-about-instaily-list-text">Hosting Of Application On AWS And DigitalOcean.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="t-white roboto f-400">For More Details Drop An Email To <a href="#" class="t-white f-500">info@freashersit.com</a> </p>
+<div class="col-xl-12 col-12 px-0 home-about-instaily-back" style="background: url(assets/images/Group162.jpg) !important;">
+    <div class="container">
+        <div class="col-xl-12 col-12 px-0 d-flex flex-wrap">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pl-0">
+                <p class="t-white oswald f-600 f-43 home-about-instaily-heading">Why Choose Us?</p>
+                <p class="t-white roboto f-400">We are IT experts ready to provide you with real-world programming knowledge and share our industrial experience with you. After course completion, you will be ready to lead<br> the domain market.</p>
+                <p class="t-white roboto f-400">Following Are Some Benefits Of Our Courses.</p>
+                <div class="col-xl-10 col-10 px-0 d-flex flex-wrap home-about-instaily-list">
+                    <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
+                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Designed to provide both Theoritical and Practical Knowledge on the go.</span></li>
+                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Course structured to provide comfort and enjoyment of learning</span></li>
+                        <li class="d-flex justify-content-between">
+                            <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
+                            <span class="home-about-instaily-list-text">Advance Technology knowledge with training.</span>
+                        </li>
+                    </ul>
+                    <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
+                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Designed to provide Industrial level knowledge to all the Students.</span></li>
+                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">IT professionals from all over India wil teach you.</span></li>
+                        <li class="d-flex justify-content-between">
+                            <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
+                            <span class="home-about-instaily-list-text">Join if you like. Free 3-Days training.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 pr-0 home-career-guidance-form-box home-career-guidance-new">
-                    <div class="card">
-                        <form id="career_form_home_form">
-                            <p class="text-center t-yellow roboto f-600 career-guidance-main-text">Career Guidance</p>
-                            <!-- Name -->
-                            <div class="col-lg-12 col-12 p-0 career_message_home_form" style="display: none;">
-                                <div class="alert alert-success career_message_success_home_form" role="alert"></div>
-                                <div class="alert alert-danger career_message_error_home_form" role="alert"></div>
-                            </div>
+                <p class="t-white roboto f-400">For More Details Contact Us Now <a href="#" class="t-white f-500"> +91-91017-52106</a> </p>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 pr-0 home-career-guidance-form-box home-career-guidance-new">
+                <div class="card">
+                    <form id="career_form_home_form">
+                        <p class="text-center t-yellow roboto f-600 career-guidance-main-text">Career Guidance</p>
+                        <!-- Name -->
+                        <div class="col-lg-12 col-12 p-0 career_message_home_form" style="display: none;">
+                            <div class="alert alert-success career_message_success_home_form" role="alert"></div>
+                            <div class="alert alert-danger career_message_error_home_form" role="alert"></div>
+                        </div>
 
-                            <div class="md-form mt-3 home-custom-form">
-                                <input type="text" class="form-control" id="home-form-name" placeholder="Name">
-                                <span class="roboto f-400 f-14 form-error name-class_home_form" style="display: none;">Please enter your name</span>
-                            </div>                                  
-                            <!-- E-mail -->
-                            <div class="md-form home-custom-form">
-                                <input type="email" class="form-control" id="home-form-email" placeholder="Email">
-                                <span class="roboto f-400 f-14 form-error email-class_home_form" style="display: none;">Please enter a valid email</span>
-                            </div>
-                            <!-- mobile no. -->
-                            <div class="md-form home-custom-form">
-                                <input type="text" class="form-control" id="home-form-number" placeholder="Mobile No.">
-                                <span class="roboto f-400 f-14 form-error no-class_home_form" style="display: none;">Please enter a valid No.</span>
-                            </div>
-                            <!--Message-->
-                            <div class="md-form home-custom-form">
-                                <textarea class="form-control md-textarea" id="home-form-message" rows="3" placeholder="Message"></textarea>
-                                <span class="roboto f-400 f-14 form-error msg-class_home_form" style="display: none;">Please type your message</span>
-                            </div>
-                            <div class="md-form mb-0 home-custom-form">
-                                <button type="button" class="btn form-control back-yellow roboto f-600 career-guidence-submit-btn join-modal-career-guidance-btn_home_form waves-effect waves-light" onclick="submitHomePageForm(home_page_captcha)">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="md-form mt-3 home-custom-form">
+                            <input type="text" class="form-control" id="home-form-name" placeholder="Name">
+                            <span class="roboto f-400 f-14 form-error name-class_home_form" style="display: none;">Please enter your name</span>
+                        </div>                                  
+                        <!-- E-mail -->
+                        <div class="md-form home-custom-form">
+                            <input type="email" class="form-control" id="home-form-email" placeholder="Email">
+                            <span class="roboto f-400 f-14 form-error email-class_home_form" style="display: none;">Please enter a valid email</span>
+                        </div>
+                        <!-- mobile no. -->
+                        <div class="md-form home-custom-form">
+                            <input type="text" class="form-control" id="home-form-number" placeholder="Mobile No.">
+                            <span class="roboto f-400 f-14 form-error no-class_home_form" style="display: none;">Please enter a valid No.</span>
+                        </div>
+                        <!--Message-->
+                        <div class="md-form home-custom-form">
+                            <textarea class="form-control md-textarea" id="home-form-message" rows="3" placeholder="Message"></textarea>
+                            <span class="roboto f-400 f-14 form-error msg-class_home_form" style="display: none;">Please type your message</span>
+                        </div>
+                        <div class="md-form mb-0 home-custom-form">
+                            <button type="button" class="btn form-control back-yellow roboto f-600 career-guidence-submit-btn join-modal-career-guidance-btn_home_form waves-effect waves-light" onclick="submitHomePageForm(home_page_captcha)">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- Banner End -->
 
     <!-- Testimonial Start -->
@@ -281,19 +276,37 @@
                 <div class="col">
                     <div class="brand_slide owl-carousel owl-theme">
                         <div class="brand_1">
-                            <img src="assets/images/brand/1.png" alt="">
+                            <img src="assets/images/brand/1.jpg" alt="">
                         </div>
                         <div class="brand_1">
-                            <img src="assets/images/brand/2.png" alt="">
+                            <img src="assets/images/brand/2.jpg" alt="">
                         </div>
                         <div class="brand_1">
-                            <img src="assets/images/brand/3.png" alt="">
+                            <img src="assets/images/brand/3.jpg" alt="">
                         </div>
                         <div class="brand_1">
-                            <img src="assets/images/brand/4.png" alt="">
+                            <img src="assets/images/brand/4.jpg" alt="">
                         </div>
                         <div class="brand_1">
-                            <img src="assets/images/brand/5.png" alt="">
+                            <img src="assets/images/brand/5.jpg" alt="">
+                        </div>
+                        <div class="brand_1">
+                            <img src="assets/images/brand/6.jpg" alt="">
+                        </div>
+                        <div class="brand_1">
+                            <img src="assets/images/brand/7.jpg" alt="">
+                        </div>
+                        <div class="brand_1">
+                            <img src="assets/images/brand/8.jpg" alt="">
+                        </div>
+                        <div class="brand_1">
+                            <img src="assets/images/brand/9.jpg" alt="">
+                        </div>
+                        <div class="brand_1">
+                            <img src="assets/images/brand/10.jpg" alt="">
+                        </div>
+                        <div class="brand_1">
+                            <img src="assets/images/brand/11.jpg" alt="">
                         </div>
                     </div>
                 </div>

@@ -2378,16 +2378,12 @@ webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   color: #061d38; }
 
 .brand_sec .brand_1 {
-  background-color: #fafafa;
-  border: 1px solid transparent;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  padding: 10px 35px; }
-  .brand_sec .brand_1 img {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+     background-color: #fafafa00;
+    border: 1px solid transparent;
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    padding: 0 22px; }
+  .brand_sec .brand_1 img { }
   .brand_sec .brand_1:hover {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }

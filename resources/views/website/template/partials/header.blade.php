@@ -65,7 +65,7 @@
                 <div class="col-md-6">
                     <div class="top-content">
                         <ul>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> +91-91017-52106 </li><li><i class="fa fa-envelope-o" aria-hidden="true"></i>webinfotech014@gmail.com</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> +91-91017-52106 </li><li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@freshersit.com</li>
                         </ul>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                     <a class="nav-link" href="{{route('website.contact-us')}}">Contact us</a>
                 </li>
                 <li class="nav-item external-link">
-                    <a class="nav-link" href="https://www.webinfotech.net.in/">Webinfotech</a>
+                    <a class="nav-link" target="_blank" href="https://www.webinfotech.net.in/">Webinfotech</a>
                 </li>
             </ul>
         </div>
