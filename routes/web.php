@@ -27,5 +27,7 @@ Route::group(['middleware'=>'auth:admin','prefix'=>'admin','namespace'=>'Admin']
     Route::get('/WebDesign', 'ApplicationController@webdesignApplication')->name('admin.webdesign');
 
     Route::get('/PHP/Ajax', 'ApplicationController@phpApplicationAjax')->name('admin.php_app_ajax');
+    Route::get('/WebDesign/Ajax', 'ApplicationController@webdesignApplicationAjax')->name('admin.webdesign_ajax');
+    Route::get('/Android/Ajax', 'ApplicationController@androidApplicationAjax')->name('admin.android_ajax');
 });
 Route::get('/home', 'HomeController@index')->name('home');

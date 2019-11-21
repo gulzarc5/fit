@@ -8,7 +8,7 @@
     	    <div class="x_panel">
 
     	        <div class="x_title">
-    	            <h2>PHP Applications</h2>
+    	            <h2>Android Applications</h2>
     	            <div class="clearfix"></div>
     	        </div>
     	        <div>
@@ -26,7 +26,6 @@
                               <th>Payment Id</th>
                               <th>Highest Qualification</th>
                               <th>Address</th>
-                              <th>Course</th>
                               <th>Application Date</th>
                             </tr>
                           </thead>
@@ -45,33 +44,30 @@
 
 @section('script')
      
-     <script type="text/javascript">
-         $(function () {
-    
-            var table = $('#size_list').DataTable({
-                processing: true,
-                serverSide: true,
-                ajax: "#",
-                columns: [
-                    {data: 'DT_RowIndex', name: 'DT_RowIndex'},
-                    {data: 'id', name: 'id',searchable: true},
-                    {data: 'name', name: 'name',searchable: true},
-                    {data: 'c_name', name: 'c_name' ,searchable: true},
-                    {data: 'first_c_name', name: 'first_c_name' ,searchable: true},       
-                    {data: 'second_c_name', name: 'second_c_name' ,searchable: true},
-                    {data: 'brand_name', name: 'brand_name' ,searchable: true}, 
-                    {data: 'status', name: 'status', render:function(data, type, row){
-                      if (row.status == '1') {
-                        return "<button class='btn btn-info'>Enable</a>"
-                      }else{
-                        return "<button class='btn btn-danger'>Disabled</a>"
-                      }                        
-                    }},                  
-                    {data: 'action', name: 'action', orderable: false, searchable: false},
-                ]
-            });
-            
-        });
-     </script>
+<script type="text/javascript">
+  $(function () {
+
+     var table = $('#size_list').DataTable({
+         processing: true,
+         serverSide: true,
+         ajax: "{{route('admin.android_ajax')}}",
+         columns: [
+             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+             {data: 'id', name: 'id',searchable: true},
+             {data: 'name', name: 'name',searchable: true},
+             {data: 'mobile', name: 'mobile' ,searchable: true},
+             {data: 'email', name: 'email' ,searchable: true},       
+             {data: 'payment_status', name: 'payment_status' ,searchable: true},
+             {data: 'payment_request_id', name: 'payment_request_id' ,searchable: true}, 
+
+             {data: 'payment_id', name: 'payment_id' ,searchable: true}, 
+             {data: 'qualification', name: 'qualification' ,searchable: true}, 
+             {data: 'address', name: 'address' ,searchable: true},              
+             {data: 'created_at', name: 'created_at', orderable: false, searchable: false},
+         ]
+     });
+     
+ });
+</script>
     
  @endsection

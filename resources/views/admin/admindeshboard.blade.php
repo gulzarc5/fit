@@ -27,7 +27,7 @@
               <div class="x_content">
                  {{--//////////// Last Ten Sellers //////////////--}}
                  <div class="table-responsive">
-                    <h2>Last Ten Applications</h2>
+                    <h2>Latest Applications</h2>
                     <table class="table table-striped jambo_table bulk_action">
                         <thead>
                             <tr class="headings">                
@@ -35,13 +35,36 @@
                                 <th class="column-title">Name</th>
                                 <th class="column-title">Email</th>
                                 <th class="column-title">Mobile No</th>
+                                <th class="column-title">Course</th>
                                 <th class="column-title">Payment Status</th>
                                 <th class="column-title">Date</th>
                             </tr>
                         </thead>
 
                         <tbody>
-                          
+                          @if (isset($last_ten) && !empty($last_ten))
+                          @php
+                              $count = 1;
+                          @endphp
+                            @foreach ($last_ten as $item)
+                                <tr>
+                                  <td>{{$count++}}</td>
+                                  <td>{{$item->name}}</td>
+                                  <td>{{$item->email}}</td>
+                                  <td>{{$item->mobile}}</td>
+                                  <td>{{$item->c_name}}</td>
+                                  <td>
+                                    @if ($item->payment_status == '1')
+                                      <a class="btn btn-warning">Not Paid</a>
+                                    @else
+                                      <a class="btn btn-primary">Paid</a>
+                                    @endif
+                                  </td>
+                                  <td>{{$item->created_at}}</td>
+                                </tr>
+                            @endforeach
+                          @endif
+                         
                         </tbody>
                     </table>
                 </div>

@@ -18,6 +18,12 @@ class DeshboardController extends Controller
         $android_application = DB::table('applications')
             ->where('course_id',3)
             ->count();
-    	return view('admin.admindeshboard',compact('php_application','design_application','android_application'));
+        $last_ten = DB::table('applications')
+            ->select('applications.*','course.name as c_name')
+            ->leftjoin('course','course.id','=','applications.course_id')
+            ->orderBy('course.id','desc')
+            ->limit(20)
+            ->get();
+    	return view('admin.admindeshboard',compact('php_application','design_application','android_application','last_ten'));
     }
 }
