@@ -164,20 +164,11 @@
 <!-- zoom js file -->
 <script src="{{asset('assets/js/jquery.magnific-popup.js')}}" ></script>
 
-<!-- popper js file -->
-<script src="{{asset('assets/js/popper.min.js')}}" ></script>
-
 <!-- bootstrap js file -->
 <script src="{{asset('assets/js/bootstrap.min.js')}}" ></script>
 
 <!-- Owl carousel js file-->
 <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 
-<!-- Counter Js File -->
-<script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
-<script src="{{asset('assets/js/jquery.waypoints.min.js')}}"></script>
-
 <!-- script js file -->
 <script src="{{asset('assets/js/script.js')}}"></script>
-</body>
-</html>

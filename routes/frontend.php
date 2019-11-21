@@ -53,3 +53,11 @@ Route::get('/Web-Development', function () {
 // })->name('website.confirm');
 
 
+//=========== Receipt ============// 
+
+Route::get('/Receipt', function () {
+    return view('website.receipt');
+})->name('website.receipt');
+
+
+

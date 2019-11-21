@@ -381,3 +381,27 @@ p.t-white.oswald.f-600.f-43.home-about-instaily-heading {
     font-weight: 500;
     color: red;
 }
+.receipt .row .quote_2 {   
+    margin: 0 15px 0;
+    padding: 0;
+}
+.bg-eeec{
+    background: #eeec!important; 
+}
+.receipt .row .quote_2 .quote_form{
+    padding: 15px;
+}
+.receipt .row .col-sm-6 {
+    padding: 0!important;
+}
+.receipt-content {
+    background-color: #fff;
+    border: 1px dashed rgba(6, 29, 56, 0.25);
+    padding: 10px 0 10px;
+}
+.receipt-content h5{
+    margin-bottom: 0;
+}
+.m-o{
+    margin: 0;
+}

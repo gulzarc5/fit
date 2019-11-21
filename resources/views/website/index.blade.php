@@ -1,4 +1,10 @@
 @extends('website.template.master')
+@section('title', 'Coaching')
+@section('metatags')
+    <meta name="author" content="pixelstrap" />
+    <meta name="description" content="Reno | Education HTML Templates from pixelstrap">
+    <meta name="keywords" content="Reno | Education HTML Templates from pixelstrap">
+@endsection
 
 @section('content')      
     <!--  Slider_start  -->
@@ -133,131 +139,72 @@
     <!-- Our Course End -->
 
     <!-- Banner Start -->
-<div class="col-xl-12 col-12 px-0 home-about-instaily-back" style="background: url(assets/images/Group162.jpg) !important;">
-    <div class="container">
-        <div class="col-xl-12 col-12 px-0 d-flex flex-wrap">
-            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pl-0">
-                <p class="t-white oswald f-600 f-43 home-about-instaily-heading">Why Choose Us?</p>
-                <p class="t-white roboto f-400">We are IT experts ready to provide you with real-world programming knowledge and share our industrial experience with you. After course completion, you will be ready to lead<br> the domain market.</p>
-                <p class="t-white roboto f-400">Following Are Some Benefits Of Our Courses.</p>
-                <div class="col-xl-10 col-10 px-0 d-flex flex-wrap home-about-instaily-list">
-                    <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
-                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Designed to provide both Theoritical and Practical Knowledge on the go.</span></li>
-                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Course structured to provide comfort and enjoyment of learning</span></li>
-                        <li class="d-flex justify-content-between">
-                            <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
-                            <span class="home-about-instaily-list-text">Advance Technology knowledge with training.</span>
-                        </li>
-                    </ul>
-                    <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
-                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Designed to provide Industrial level knowledge to all the Students.</span></li>
-                        <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">IT professionals from all over India wil teach you.</span></li>
-                        <li class="d-flex justify-content-between">
-                            <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
-                            <span class="home-about-instaily-list-text">Join if you like. Free 3-Days training.</span>
-                        </li>
-                    </ul>
-                </div>
-                <p class="t-white roboto f-400">For More Details Contact Us Now <a href="#" class="t-white f-500"> +91-91017-52106</a> </p>
-            </div>
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 pr-0 home-career-guidance-form-box home-career-guidance-new">
-                <div class="card">
-                    <form id="career_form_home_form">
-                        <p class="text-center t-yellow roboto f-600 career-guidance-main-text">Career Guidance</p>
-                        <!-- Name -->
-                        <div class="col-lg-12 col-12 p-0 career_message_home_form" style="display: none;">
-                            <div class="alert alert-success career_message_success_home_form" role="alert"></div>
-                            <div class="alert alert-danger career_message_error_home_form" role="alert"></div>
-                        </div>
-
-                        <div class="md-form mt-3 home-custom-form">
-                            <input type="text" class="form-control" id="home-form-name" placeholder="Name">
-                            <span class="roboto f-400 f-14 form-error name-class_home_form" style="display: none;">Please enter your name</span>
-                        </div>                                  
-                        <!-- E-mail -->
-                        <div class="md-form home-custom-form">
-                            <input type="email" class="form-control" id="home-form-email" placeholder="Email">
-                            <span class="roboto f-400 f-14 form-error email-class_home_form" style="display: none;">Please enter a valid email</span>
-                        </div>
-                        <!-- mobile no. -->
-                        <div class="md-form home-custom-form">
-                            <input type="text" class="form-control" id="home-form-number" placeholder="Mobile No.">
-                            <span class="roboto f-400 f-14 form-error no-class_home_form" style="display: none;">Please enter a valid No.</span>
-                        </div>
-                        <!--Message-->
-                        <div class="md-form home-custom-form">
-                            <textarea class="form-control md-textarea" id="home-form-message" rows="3" placeholder="Message"></textarea>
-                            <span class="roboto f-400 f-14 form-error msg-class_home_form" style="display: none;">Please type your message</span>
-                        </div>
-                        <div class="md-form mb-0 home-custom-form">
-                            <button type="button" class="btn form-control back-yellow roboto f-600 career-guidence-submit-btn join-modal-career-guidance-btn_home_form waves-effect waves-light" onclick="submitHomePageForm(home_page_captcha)">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- Banner End -->
-
-    <!-- Testimonial Start -->
-    <section class="testimonial testimonial-education">
+    <div class="col-xl-12 col-12 px-0 home-about-instaily-back" style="background: url(assets/images/Group162.jpg) !important;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="testimonial_slide owl-carousel owl-theme">
-                        <div class="testimonial_sec">
-                            <div>
-                                <img src="assets/images/testimonial/1.png" alt="testimonialimage">
-                                <i class="fa fa-quote-left img_quote" aria-hidden="true"></i>
-                                <p>
-                                    <span class="quote_left"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua.Ut enim ad minim veniam, consectetur adipisicing nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo cons
-                                    Ut enim ad minim veniam.
-                                    <span class="quote_right"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
-                                </p>
-                                <h3>Ethen Mark</h3>
-                                <h5>Director</h5>
+            <div class="col-xl-12 col-12 px-0 d-flex flex-wrap">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pl-0">
+                    <p class="t-white oswald f-600 f-43 home-about-instaily-heading">Why Choose Us?</p>
+                    <p class="t-white roboto f-400">We are IT experts ready to provide you with real-world programming knowledge and share our industrial experience with you. After course completion, you will be ready to lead<br> the domain market.</p>
+                    <p class="t-white roboto f-400">Following Are Some Benefits Of Our Courses.</p>
+                    <div class="col-xl-10 col-10 px-0 d-flex flex-wrap home-about-instaily-list">
+                        <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
+                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Designed to provide both Theoritical and Practical Knowledge on the go.</span></li>
+                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Course structured to provide comfort and enjoyment of learning</span></li>
+                            <li class="d-flex justify-content-between">
+                                <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
+                                <span class="home-about-instaily-list-text">Advance Technology knowledge with training.</span>
+                            </li>
+                        </ul>
+                        <ul class="col-md-6 col-sm-6 col-xs-12 col-xl-6 col-lg-6 col-12 pt-2 px-0">
+                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">Designed to provide Industrial level knowledge to all the Students.</span></li>
+                            <li class="d-flex justify-content-between"><span><i class="fa fa-check mr-3" aria-hidden="true"></i></span><span class="home-about-instaily-list-text">IT professionals from all over India wil teach you.</span></li>
+                            <li class="d-flex justify-content-between">
+                                <span><i class="fa fa-check mr-3" aria-hidden="true"></i></span>
+                                <span class="home-about-instaily-list-text">Join if you like. Free 3-Days training.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="t-white roboto f-400">For More Details Contact Us Now <a href="#" class="t-white f-500"> +91-91017-52106</a> </p>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 pr-0 home-career-guidance-form-box home-career-guidance-new">
+                    <div class="card">
+                        <form id="career_form_home_form">
+                            <p class="text-center t-yellow roboto f-600 career-guidance-main-text">Career Guidance</p>
+                            <!-- Name -->
+                            <div class="col-lg-12 col-12 p-0 career_message_home_form" style="display: none;">
+                                <div class="alert alert-success career_message_success_home_form" role="alert"></div>
+                                <div class="alert alert-danger career_message_error_home_form" role="alert"></div>
                             </div>
-                        </div>
-                        <div class="testimonial_sec">
-                            <div>
-                                <img src="assets/images/testimonial/2.png" alt="testimonialimage">
-                                <i class="fa fa-quote-left img_quote" aria-hidden="true"></i>
-                                <p>
-                                    <span class="quote_left"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua.Ut enim ad minim veniam, consectetur adipisicing nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo cons
-                                    Ut enim ad minim veniam.
-                                    <span class="quote_right"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
-                                </p>
-                                <h3>Suzen Desoza</h3>
-                                <h5>Director</h5>
+
+                            <div class="md-form mt-3 home-custom-form">
+                                <input type="text" class="form-control" id="home-form-name" placeholder="Name">
+                                <span class="roboto f-400 f-14 form-error name-class_home_form" style="display: none;">Please enter your name</span>
+                            </div>                                  
+                            <!-- E-mail -->
+                            <div class="md-form home-custom-form">
+                                <input type="email" class="form-control" id="home-form-email" placeholder="Email">
+                                <span class="roboto f-400 f-14 form-error email-class_home_form" style="display: none;">Please enter a valid email</span>
                             </div>
-                        </div>
-                        <div class="testimonial_sec">
-                            <div>
-                                <img src="assets/images/testimonial/3.png" alt="testimonialimage">
-                                <i class="fa fa-quote-left img_quote" aria-hidden="true"></i>
-                                <p>
-                                    <span class="quote_left"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua.Ut enim ad minim veniam, consectetur adipisicing nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo cons
-                                    Ut enim ad minim veniam.
-                                    <span class="quote_right"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
-                                </p>
-                                <h3>John Deo</h3>
-                                <h5>Director</h5>
+                            <!-- mobile no. -->
+                            <div class="md-form home-custom-form">
+                                <input type="text" class="form-control" id="home-form-number" placeholder="Mobile No.">
+                                <span class="roboto f-400 f-14 form-error no-class_home_form" style="display: none;">Please enter a valid No.</span>
                             </div>
-                        </div>
+                            <!--Message-->
+                            <div class="md-form home-custom-form">
+                                <textarea class="form-control md-textarea" id="home-form-message" rows="3" placeholder="Message"></textarea>
+                                <span class="roboto f-400 f-14 form-error msg-class_home_form" style="display: none;">Please type your message</span>
+                            </div>
+                            <div class="md-form mb-0 home-custom-form">
+                                <button type="button" class="btn form-control back-yellow roboto f-600 career-guidence-submit-btn join-modal-career-guidance-btn_home_form waves-effect waves-light" onclick="submitHomePageForm(home_page_captcha)">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Testimonial End -->
-
+    </div>
+    <!-- Banner End -->
 
     <!-- Brand Start -->
     <section class="brand_sec cmn_bg cmn_bg-4">
@@ -267,12 +214,6 @@
         </ul>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="con_title">
-                        <h2>OUR CLIENT</h2>
-                        <h6><span>HAPPY CLIENT</span></h6>
-                    </div>
-                </div>
                 <div class="col">
                     <div class="brand_slide owl-carousel owl-theme">
                         <div class="brand_1">

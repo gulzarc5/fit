@@ -1,4 +1,10 @@
 @extends('website.template.master')
+@section('title', 'Contact Us')
+@section('metatags')
+    <meta name="author" content="pixelstrap" />
+    <meta name="description" content="Reno | Education HTML Templates from pixelstrap">
+    <meta name="keywords" content="Reno | Education HTML Templates from pixelstrap">
+@endsection
 
 @section('content')
     <!-- Breadcrumb Start -->
