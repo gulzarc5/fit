@@ -11,9 +11,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/favicon.ico" type="image/ico" />
-
-    <title>Edujiyaan</title>
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <title>Freashers IT</title>
     <link rel="icon" href="{{ asset('logo/logo.png')}}" type="image/icon type">
 
 
@@ -39,14 +38,6 @@
     <link href="{{asset('admin/src_files/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/src_files/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/src_files/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css')}}" rel="stylesheet">
-
-    {{-- pnotify --}}
-    
-   {{--  <link href="{{asset('admin/src_files/vendors/pnotify/dist/pnotify.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/src_files/vendors/pnotify/dist/pnotify.buttons.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/src_files/vendors/pnotify/dist/pnotify.nonblock.css')}}" rel="stylesheet"> --}}
-
-    <!-- Custom Theme Style -->
     <link href="{{asset('admin/src_files/build/css/custom.min.css')}}" rel="stylesheet">
   </head>
 
@@ -57,24 +48,17 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="{{route('admin.deshboard')}}" class="site_title">
-                <img src="{{ asset('logo/logo.png')}}" height="50" style=" width: 50%;">
+                <img src="{{ asset('images/white-logo.png')}}"  style=" width: 95%;">
               </a>
             </div>
 
             <div class="clearfix"></div>
-
-            <!-- menu profile quick info -->
             <div class="profile clearfix">
-            {{--   <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-              </div> --}}
               <div class="profile_info">
                 <span>Welcome,<b>Admin</b></span>
                 
               </div>
             </div>
-            <!-- /menu profile quick info -->
-
             <br />
 
             <!-- sidebar menu -->
@@ -86,14 +70,13 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Applications <span class="fa fa-chevron-down"></span></a>
                      <ul class="nav child_menu">
-                      <li class="sub_menu"><a href="#">PHP</a></li>
-                      <li class="sub_menu"><a href="#">Web Design</a></li>
-                      <li class="sub_menu"><a href="#">Android</a></li>
+                      <li class="sub_menu"><a href="{{route('admin.php_app')}}">PHP</a></li>
+                      <li class="sub_menu"><a href="{{route('admin.webdesign')}}">Web Design</a></li>
+                      <li class="sub_menu"><a href="{{route('admin.android')}}">Android</a></li>
                     </ul>
                   </li>
                 </ul>
               </div>
-
             </div>
             <!-- /sidebar menu -->
 
@@ -129,57 +112,6 @@
              <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
                   @csrf
               </form>
-
-                {{-- <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge bg-green">
-                      @if (isset($admin_data['total_count']))
-                          {{ $admin_data['total_count'] }}
-                      @else
-                          0
-                      @endif
-                    </span>
-                  </a>
-                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    @if (isset($admin_data['new_order_count']) && $admin_data['new_order_count'] > 0 )
-                      <li>
-                      <a href="{{ route('admin.all_order_list') }}">
-                          <span>
-                            <span>Order</span>
-                          </span>
-                          <span class="message">
-                            <strong>{{ $admin_data['new_order_count']}}</strong> New Order Placed Click Here To Check
-                          </span>
-                        </a>
-                      </li>
-                    @endif
-                    @if (isset($admin_data['seller_view_count']) && $admin_data['seller_view_count'] > 0 )
-                      <li>
-                        <a href="{{ route('admin.allSellers') }}">
-                          <span>
-                            <span>Seller</span>
-                          </span>
-                          <span class="message">
-                            <strong>{{ $admin_data['seller_view_count']}}</strong> New Seller Registered Click Here To Check
-                          </span>
-                        </a>
-                      </li>
-                    @endif
-                    @if (isset($admin_data['buyer_view_count']) && $admin_data['buyer_view_count'] > 0 )
-                      <li>
-                        <a href="{{ route('admin.allBuyers') }}">
-                          <span>
-                            <span>Buyer</span>
-                          </span>
-                          <span class="message">
-                            <strong>{{ $admin_data['buyer_view_count']}}</strong> New Buyer Registered Click Here To Check
-                          </span>
-                        </a>
-                      </li>
-                    @endif
-                  </ul>
-                </li> --}}
               </ul>
             </nav>
           </div>

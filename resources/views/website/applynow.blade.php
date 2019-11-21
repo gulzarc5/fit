@@ -36,34 +36,62 @@
                     <div class="quote_2 comment_form_sec">
                         <div class="quote_form"><br>
                             <h3>Enter Your Basic Information</h3><br>
-                            <form >
+                            {{ Form::open(array('route' => 'web.apply', 'method' => 'post')) }}
+                                @if (isset($id))
+                                    <input type="hidden" name="course" value="{{encrypt($id)}}"/>
+                                @endif
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
                                         <label>Name :</label>
-                                        <input type="text" class="form-control" placeholder="Enter Your Name" required="">
+                                        <input type="text" class="form-control" placeholder="Enter Your Name" name="name" value="{{old('name')}}">
+                                        @if($errors->has('name'))
+                                            <span role="alert" style="color:red">
+                                                <strong>{{ $errors->first('name') }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputEmail4">Email :</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email" required="">
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your Email" name="email" value="{{old('email')}}">
+                                        @if($errors->has('email'))
+                                            <span role="alert" style="color:red">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputEmail4">Phone :</label>
-                                        <input type="number" class="form-control" placeholder="Enter Your Phone" required="">
+                                        <input type="number" class="form-control" placeholder="Enter Your Phone" name="mobile" value="{{old('mobile')}}">
+                                        @if($errors->has('mobile'))
+                                            <span role="alert" style="color:red">
+                                                <strong>{{ $errors->first('mobile') }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="exampleTextarea">Highest Qualification :</label>
-                                        <textarea class="form-control msg_coment" id="exampleTextarea" rows="2" placeholder="Qualification" required=""></textarea>
+                                        <textarea class="form-control msg_coment" id="exampleTextarea" rows="2" placeholder="Qualification" name="qualification" value="{{old('qualification')}}"></textarea>
+                                        @if($errors->has('qualification'))
+                                            <span role="alert" style="color:red">
+                                                <strong>{{ $errors->first('qualification') }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="exampleTextarea">Full Address :</label>
-                                        <textarea class="form-control msg_coment" id="exampleTextarea" rows="2" placeholder="Address" required=""></textarea>
+                                        <textarea class="form-control msg_coment" id="exampleTextarea" rows="2" placeholder="Address" name="address" value="{{old('address')}}"></textarea>
+                                        @if($errors->has('address'))
+                                            <span role="alert" style="color:red">
+                                                <strong>{{ $errors->first('address') }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
-                                <a class="quote_btn theme_btn" href="{{route('website.confirm')}}" type="Submit">
+                                <button type="submit" class="quote_btn theme_btn" type="Submit">
                                     Submit
                                     <span class="theme_btn_eff"></span>
-                                </a>
-                            </form>
+                                </button>
+                            {{ Form::close() }}
                         </div>
                     </div>
                     <!-- leave comment section end-->

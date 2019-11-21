@@ -45,7 +45,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service_our">
                         <figure class="snip_con">
-                            <a class="course-link" href="Web_design">
+                            <a class="course-link" href="{{ROUTE('website.web_design')}}">
                                 <img src="assets/images/education/services/1.jpg" class="img-fluid" alt="serviceimage">
                             </a>
                             <figcaption>
@@ -55,26 +55,26 @@
                                     <p class="pretext"><i></i>CSS & Bootstrap 4</p>
                                     <p class="pretext"><i></i>Javascript & Jquery</p>
                                     <p class="pretext"><i></i>Live Project</p>
-                                    <a class="c-link" href="Web_design">Read More</a>
+                                    <a class="c-link" href="{{ROUTE('website.web_design')}}">Read More</a>
                                 </div>
                             </figcaption>
                         </figure>                 
                         <div class="service_content">
-                            <a class="course-link" href="Web_design">
+                            <a class="course-link" href="{{ROUTE('website.web_design')}}">
                                 <h5>Web Design</h5>
                                 <span class="d-block home-opening-courses-box-title-border"></span>
                                 <p class="mb-1 t-red roboto f-500 price">₹7500<span class="old-price">₹10,000</span></p>
                                 <p>35 Students Enrolled </p>
                                 <p class="mb-0 d-flex t-yellow roboto f-600"><b style="color:red;margin-right: 2px;">* </b>Industrial Level<span class="new">2 months</span></p>
                             </a>                            
-                            <a href="Apply-Now"><h6 class="index-apply">Apply Now</h6></a>
+                            <a href="{{route('web.apply_form',['id'=>encrypt(1)])}}"><h6 class="index-apply">Apply Now</h6></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service_our">
                         <figure class="snip_con">
-                            <a class="course-link" href="Web-Development">
+                            <a class="course-link" href="{{route('website.php_train')}}">
                                 <img src="assets/images/education/services/2.jpg" class="img-fluid " alt="serviceimage">
                             </a>
                             <figcaption>
@@ -83,26 +83,26 @@
                                     <p class="pretext"><i></i>Login System</p>
                                     <p class="pretext"><i></i>Design a dynamic site</p>
                                     <p class="pretext"><i></i>Logic based problem </p>
-                                    <a class="c-link" href="Web-Development">Read More</a>
+                                    <a class="c-link" href="{{route('website.php_train')}}">Read More</a>
                                 </div>
                             </figcaption>
                         </figure>                    
                         <div class="service_content">
-                            <a class="course-link" href="Web-Development">
+                            <a class="course-link" href="{{route('website.php_train')}}">
                                 <h5>Web Development</h5>
                                 <span class="d-block home-opening-courses-box-title-border"></span>
                                 <p class="mb-1 t-red roboto f-500 price">₹12,000<span class="old-price">₹15,000</span></p>
                                 <p>35 Students Enrolled </p>
                                 <p class="mb-0 d-flex t-yellow roboto f-600"><b style="color:red;margin-right: 2px;">* </b>Industrial Level<span class="new">3 months</span></p>
                             </a>                            
-                            <a href="Apply-Now"><h6 class="index-apply">Apply Now</h6></a>
+                            <a href="{{route('web.apply_form',['id'=>encrypt(2)])}}"><h6 class="index-apply">Apply Now</h6></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service_our">
                         <figure class="snip_con">
-                            <a class="course-link" href="Andriod-Application">
+                            <a class="course-link" href="{{route('website.andriod')}}">
                                 <img src="assets/images/education/services/3.jpg" class="img-fluid " alt="serviceimage">
                             </a> 
                             <figcaption>
@@ -111,19 +111,19 @@
                                     <p class="pretext"><i></i>Login System</p>
                                     <p class="pretext"><i></i>Design a dynamic site</p>
                                     <p class="pretext"><i></i>Logic based problem </p>
-                                    <a class="c-link" href="Php-Training">Read More</a>
+                                    <a class="c-link" href="{{route('website.andriod')}}">Read More</a>
                                 </div>
                             </figcaption>  
                         </figure>                    
                         <div class="service_content">
-                            <a class="course-link" href="Andriod-Application">
+                            <a class="course-link" href="{{route('website.andriod')}}">
                                 <h5>Android Development</h5>
                                 <span class="d-block home-opening-courses-box-title-border"></span>
                                 <p class="mb-1 t-red roboto f-500 price">₹12,500<span class="old-price">₹15,000</span></p>
                                 <p>35 Students Enrolled </p>
                                 <p class="mb-0 d-flex t-yellow roboto f-600"><b style="color:red;margin-right: 2px;">* </b>Industrial Level<span class="new">3 months</span></p>
                             </a>                            
-                            <a href="Apply-Now"><h6 class="index-apply">Apply Now</h6></a>
+                            <a href="{{route('web.apply_form',['id'=>encrypt(3)])}}"><h6 class="index-apply">Apply Now</h6></a>
                         </div>                    
                     </div>
                 </div>

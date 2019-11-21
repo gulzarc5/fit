@@ -7,15 +7,15 @@
     <div class="row tile_count">
       <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
         <span class="count_top"><i class="fa fa-user"></i> PHP</span>
-        <div class="count green">0</div>
+        <div class="count green">{{$php_application}}</div>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
         <span class="count_top"><i class="fa fa-clock-o"></i> Web Design</span>
-        <div class="count green">0</div>
+        <div class="count green">{{$design_application}}</div>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
           <span class="count_top"><i class="fa fa-user"></i> Android</span>
-          <div class="count green">0</div>
+          <div class="count green">{{$android_application}}</div>
       </div>
       
     </div>
@@ -35,7 +35,7 @@
                                 <th class="column-title">Name</th>
                                 <th class="column-title">Email</th>
                                 <th class="column-title">Mobile No</th>
-                                <th class="column-title">Varification Status</th>
+                                <th class="column-title">Payment Status</th>
                                 <th class="column-title">Date</th>
                             </tr>
                         </thead>
