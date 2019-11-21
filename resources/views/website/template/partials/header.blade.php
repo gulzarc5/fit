@@ -87,7 +87,7 @@
     <!-- Nav Start -->
     <nav class="navbar education navbar-expand-lg navbar-light theme-nav bg-white" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="Home"><img src="{{asset('assets/images/logo/logo.png')}}" alt="logo"></a>
+            <a class="navbar-brand" href="{{route('website.Home')}}"><img src="{{asset('assets/images/logo/logo.png')}}" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars" aria-hidden="true"></i>
