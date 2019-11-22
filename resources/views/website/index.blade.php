@@ -172,37 +172,53 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 pr-0 home-career-guidance-form-box home-career-guidance-new">
                     <div class="card">
-                        <form id="career_form_home_form">
+                        {{ Form::open(array('route' => 'web.sendMail', 'method' => 'post')) }}
                             <p class="text-center t-yellow roboto f-600 career-guidance-main-text">Career Guidance</p>
                             <!-- Name -->
-                            <div class="col-lg-12 col-12 p-0 career_message_home_form" style="display: none;">
-                                <div class="alert alert-success career_message_success_home_form" role="alert"></div>
-                                <div class="alert alert-danger career_message_error_home_form" role="alert"></div>
-                            </div>
+                            
+                                @if (Session::has('message'))
+                                    <div class="col-lg-12 col-12 p-0 career_message_home_form">
+                                        <div class="alert alert-success career_message_success_home_form" role="alert">
+                                            {{ Session::get('message') }}
+                                        </div>
+                                    </div>
+                                @endif
+                                
+                               
+                            
 
                             <div class="md-form mt-3 home-custom-form">
-                                <input type="text" class="form-control" id="home-form-name" placeholder="Name">
-                                <span class="roboto f-400 f-14 form-error name-class_home_form" style="display: none;">Please enter your name</span>
+                                <input type="text" class="form-control" id="home-form-name" name="name" placeholder="Name">
+                                @if($errors->has('name'))
+                                    <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('name') }}</span>
+                                @enderror
+                                
                             </div>                                  
                             <!-- E-mail -->
                             <div class="md-form home-custom-form">
-                                <input type="email" class="form-control" id="home-form-email" placeholder="Email">
-                                <span class="roboto f-400 f-14 form-error email-class_home_form" style="display: none;">Please enter a valid email</span>
+                                <input type="text" class="form-control" id="home-form-email" name="email" placeholder="Email">
+                                @if($errors->has('email'))
+                                    <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('email') }}</span>
+                                @enderror
                             </div>
                             <!-- mobile no. -->
                             <div class="md-form home-custom-form">
-                                <input type="text" class="form-control" id="home-form-number" placeholder="Mobile No.">
-                                <span class="roboto f-400 f-14 form-error no-class_home_form" style="display: none;">Please enter a valid No.</span>
+                                <input type="text" class="form-control" id="home-form-number" placeholder="Mobile No." name="mobile">
+                                @if($errors->has('mobile'))
+                                    <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('mobile') }}</span>
+                                @enderror
                             </div>
                             <!--Message-->
                             <div class="md-form home-custom-form">
-                                <textarea class="form-control md-textarea" id="home-form-message" rows="3" placeholder="Message"></textarea>
-                                <span class="roboto f-400 f-14 form-error msg-class_home_form" style="display: none;">Please type your message</span>
+                                <textarea class="form-control md-textarea" id="home-form-message" rows="3" placeholder="Message" name="message"></textarea>
+                                @if($errors->has('message'))
+                                    <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('message') }}</span>
+                                @enderror
                             </div>
                             <div class="md-form mb-0 home-custom-form">
-                                <button type="button" class="btn form-control back-yellow roboto f-600 career-guidence-submit-btn join-modal-career-guidance-btn_home_form waves-effect waves-light" onclick="submitHomePageForm(home_page_captcha)">Submit</button>
+                                <button type="submit" class="btn form-control back-yellow roboto f-600 career-guidence-submit-btn join-modal-career-guidance-btn_home_form waves-effect waves-light" onclick="submitHomePageForm(home_page_captcha)">Submit</button>
                             </div>
-                        </form>
+                        {{ Form::close() }}
                     </div>
                 </div>
             </div>

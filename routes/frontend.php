@@ -11,6 +11,11 @@ Route::group(['namespace'=>'Web'],function(){
     Route::post('/Apply/Course', 'ApplicationController@apply')->name('web.apply');
     Route::get('/Pay/Fee/{student_id}/{course_id}', 'ApplicationController@payEnrollFee')->name('web.pay_fee');
     Route::get('/Pay/success/{student_id}/{course_id}', 'ApplicationController@paySuccess')->name('web.pay_success');
+    Route::post('/Send/Mail', 'ContactController@sendMail')->name('web.sendMail');
+    Route::get('/Receipt/Details/{student_id?}', 'ApplicationController@receiptDetail')->name('website.receipt');
+
+    Route::get('Apply/Confirm/{student_id}/{course_id}','ApplicationController@confirmEnroll')->name('web.confirm_enroll');
+    
 });
 
 //=========== About ============// 
@@ -54,10 +59,6 @@ Route::get('/Web-Development', function () {
 
 
 //=========== Receipt ============// 
-
-Route::get('/Receipt', function () {
-    return view('website.receipt');
-})->name('website.receipt');
 
 
 

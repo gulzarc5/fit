@@ -66,30 +66,49 @@
                                     <div class="row">
                                         <div class="col-12 quote_form">
                                             <h3 class="page-header-comment mb-4">Leave you comment :</h3>
-                                            <form>
+                                            @if (Session::has('message'))
+                                                <div class="col-lg-12 col-12 p-0 career_message_home_form">
+                                                    <div class="alert alert-success career_message_success_home_form" role="alert">
+                                                        {{ Session::get('message') }}
+                                                    </div>
+                                                </div>
+                                            @endif
+                                            {{ Form::open(array('route' => 'web.sendMail', 'method' => 'post')) }}
                                                 <div class="form-row">
                                                     <div class="form-group col-md-12">
                                                         <label>Name :</label>
-                                                        <input type="text" class="form-control" placeholder="Enter Your Name" required="">
+                                                        <input type="text" class="form-control" placeholder="Enter Your Name" name="name">
+                                                        @if($errors->has('name'))
+                                                            <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('name') }}</span>
+                                                        @enderror
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="inputEmail4">Email :</label>
-                                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email" required="">
+                                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your Email" name="email">
+                                                        @if($errors->has('email'))
+                                                            <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('email') }}</span>
+                                                        @enderror
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="inputEmail4">Phone :</label>
-                                                        <input type="number" class="form-control" id="" placeholder="Enter Your Phone" required="">
+                                                        <input type="number" class="form-control" id="" placeholder="Enter Your Phone" name="mobile">
+                                                        @if($errors->has('mobile'))
+                                                            <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('mobile') }}</span>
+                                                        @enderror
                                                     </div>
                                                     <div class="form-group col-md-12">
                                                         <label for="exampleTextarea">Message :</label>
-                                                        <textarea class="form-control msg_coment" id="exampleTextarea" rows="3" placeholder="Leave a Comment" required=""></textarea>
+                                                        <textarea class="form-control msg_coment" id="exampleTextarea" rows="3" placeholder="Leave a Comment" name="message"></textarea>
+                                                        @if($errors->has('message'))
+                                                            <span class="roboto f-400 f-14 form-error name-class_home_form">{{ $errors->first('message') }}</span>
+                                                        @enderror
                                                     </div>
                                                 </div>
-                                                <a class="quote_btn theme_btn" href="#">
+                                                <button class="quote_btn theme_btn" type="submit">
                                                     Send Your Message
                                                     <span class="theme_btn_eff"></span>
-                                                </a>
-                                            </form>
+                                                </button>
+                                            {{ Form::close() }}
                                         </div>
                                     </div>
                                 </div>

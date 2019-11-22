@@ -66,7 +66,7 @@
                                 <p class="pretext" style="margin: 0">Receipt copy<b style="color: red">*</b></p>
                                 <p class="pretext" style="margin: 0">2 passport size photo<b style="color: red">*</b></p>
                                 <p class="pretext" style="margin: 0">Address Proof<b style="color: red">*</b></p>
-                                <div class="con-div"><a style="padding: 7px 23px;" href="http://localhost/fit/public/Receipt" class="index-apply" onclick="printDiv()">Print</a></div>
+                                <div class="con-div"><button style="padding: 7px 23px;" class="index-apply" onclick="printDiv()">Print</button></div>
                             @else
                                 <p style="color:red">Sorry !! Payment Failed</p>
                             @endif

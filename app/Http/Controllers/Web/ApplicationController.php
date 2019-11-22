@@ -21,6 +21,16 @@ class ApplicationController extends Controller
 
         return view('website.applynow',compact('id'));
     }
+    public function confirmEnroll($student_id,$course_id)
+    {
+        try{
+            $student_id = decrypt($student_id);
+            $course_id = decrypt($course_id);
+        }catch(DecryptException $e) {
+            abort(404);
+        }
+        return view('website.confirm',compact('student_id','course_id'));
+    }
 
     public function apply(Request $request)
     {
@@ -53,7 +63,7 @@ class ApplicationController extends Controller
         
         $request_info = urldecode("Dear ".$request->input('name').", Thanks For Registering For The Course , To Confirm Your Enrollement Please P an Amount of Rs. 500.00. For Any Query Feel Free To Contact Us 9101752106 Thank you");
         SmsHelpers::smsSend($request->input('mobile'),$request_info);
-        return view('website.confirm',compact('student_id','course_id'));
+        return redirect()->route('web.confirm_enroll',['student_id'=>encrypt($student_id),'course_id'=>encrypt($course_id),]);
     }
 
     public function payEnrollFee($student_id,$course_id)
@@ -66,7 +76,6 @@ class ApplicationController extends Controller
         }
 
         $student = DB::table('applications')->where('id',$student_id)->first();
-
         $total_cost =  500;
         $user_name = $student->name;
         $user_email = $student->email;
@@ -99,8 +108,7 @@ class ApplicationController extends Controller
             header('Location: ' . $response['longurl']);
             exit();
         }catch (Exception $e) {
-            $status = "1";
-            return view('website.receipt',compact('status'));
+            return redirect()->route('website.receipt');
         }
     }
 
@@ -124,15 +132,12 @@ class ApplicationController extends Controller
             $response = $api->paymentRequestStatus(request('payment_request_id'));
      
             if( !isset($response['payments'][0]['status']) ) {
-                $status = "1";
-                return view('website.receipt',compact('status'));
+                return redirect()->route('website.receipt');
             } else if($response['payments'][0]['status'] != 'Credit') {
-                $status = "1";
-                return view('website.receipt',compact('status'));
+                return redirect()->route('website.receipt');
             } 
           }catch (\Exception $e) {
-                $status = "1";
-                return view('website.receipt',compact('status'));
+            return redirect()->route('website.receipt');
          }
         
         if($response['payments'][0]['status'] == 'Credit') { 
@@ -151,12 +156,30 @@ class ApplicationController extends Controller
             
             $request_info = urldecode("You Have Successfully Paid an Amount of Rs. 500.00. Transaction Id is ".$response['id']." . For Any Query Feel Free To Contact Us 9101752106 Thank you");
             SmsHelpers::smsSend($student->mobile,$request_info);
-
-            return view('website.receipt',compact('student'));
+            return redirect()->route('website.receipt',['student_id'=>encrypt($student_id)]);
         }else{
-            $status = "1";
-            return view('website.receipt',compact('status'));
+            return redirect()->route('website.receipt');
         }
         
+    }
+
+    public function receiptDetail($student_id = null)
+    {
+        if (!empty($student_id)) {
+            try{
+                $student_id = decrypt($student_id);
+            }catch(DecryptException $e) {
+                return view('website.receipt');
+            }
+
+            $student = DB::table('applications')
+                ->select('applications.*','course.name as c_name')
+                ->leftjoin('course','course.id','=','applications.course_id')
+                ->where('applications.id',$student_id)
+                ->first();
+            return view('website.receipt',compact('student'));
+        }else{
+            return view('website.receipt');
+        }
     }
 }
