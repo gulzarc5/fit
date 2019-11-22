@@ -8,7 +8,7 @@
 
 @section('content')
     <!-- blog Section starts-->
-    <section class="cmn_bg blog_page receipt" style="border-top: 1px solid #eee;">
+    <section class="cmn_bg blog_page receipt" style="border-top: 1px solid #eee;background-image: url(assets/images/Education.jpg);background-size: contain;">
         <ul class="plus_decore">
             <li></li>
             <li></li>

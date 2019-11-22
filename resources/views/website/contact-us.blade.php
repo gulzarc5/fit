@@ -30,7 +30,7 @@
     <!-- Breadcrumb Start -->
 
     <!-- Contact-us Start -->
-    <section class="contact-section cmn_bg">
+    <section class="contact-section cmn_bg" style="background-image: url(assets/images/Education.jpg);background-size: contain;">
         <ul class="plus_decore">
             <li></li>
             <li></li>
@@ -51,10 +51,9 @@
                                 </div>
                                 <div class="contant-text">
                                     <ul>
-                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nupur Niwas, Purbanchal Path, Downtown, Dispur,
-                                        Guwahati - 781022</li>
-                                        <li><i class="fa fa-phone" aria-hidden="true"></i>Call Us: +91-9706868355 / +91-7086030335</li>
-                                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Email Us: webinfotech014@gmail.com</li>
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Hengrabari, Guwahati, Assam</li>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i>Call Us: +91-91017-52106</li>
+                                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Email Us: info@freshersit.com</li>
                                     </ul>
                                 </div>
                             </div>
@@ -69,13 +68,17 @@
                                             <h3 class="page-header-comment mb-4">Leave you comment :</h3>
                                             <form>
                                                 <div class="form-row">
-                                                    <div class="form-group col-md-6">
+                                                    <div class="form-group col-md-12">
                                                         <label>Name :</label>
                                                         <input type="text" class="form-control" placeholder="Enter Your Name" required="">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="inputEmail4">Email :</label>
                                                         <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email" required="">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputEmail4">Phone :</label>
+                                                        <input type="number" class="form-control" id="" placeholder="Enter Your Phone" required="">
                                                     </div>
                                                     <div class="form-group col-md-12">
                                                         <label for="exampleTextarea">Message :</label>

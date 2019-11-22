@@ -272,8 +272,9 @@ p.t-white.oswald.f-600.f-43.home-about-instaily-heading {
     text-transform: uppercase;
     border-radius: 3px;
 }
-.index-apply:hover{
+.index-apply:hover, .detail-btn:hover, .blog_side_title a h6:hover{
     box-shadow: 0 2px 5px 0 #333;
+    color: #f78124!important;
 }
 .course-head{
     display: inline-block;
@@ -386,7 +387,7 @@ p.t-white.oswald.f-600.f-43.home-about-instaily-heading {
     padding: 0;
 }
 .bg-eeec{
-    background: #eeec!important; 
+    background: #cbe3ff85!important; 
 }
 .receipt .row .quote_2 .quote_form{
     padding: 15px;
@@ -402,6 +403,60 @@ p.t-white.oswald.f-600.f-43.home-about-instaily-heading {
 .receipt-content h5{
     margin-bottom: 0;
 }
+.detail-btn{
+    text-transform: uppercase;
+    padding: 1px 8px;
+    background-color: #061d38;
+    font-size: 12px;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    right: 4%;
+}
 .m-o{
     margin: 0;
+}
+.comment_form.contact_form.contect_f .quote_2.comment_form_sec .quote_form .form-row .form-group .form-control:focus, .quote_2.comment_form_sec .quote_form .form-row .form-group .form-control:focus{
+    border: 1px dashed rgba(6, 29, 56, 0.85);
+}
+#career_form_home_form input:focus, #career_form_home_form textarea:focus{
+    border-bottom: 1px solid #133f6c;
+}
+@media (max-width: 425px) {
+    .home-full .bg-size {
+        height: 100px;
+    } 
+    .home-career-guidance-form-box .card {
+        position: relative;
+    }
+    .home-about-instaily-back { 
+        margin-bottom: 0;
+    }    
+    .bread_crumb .functionalities ul.breadcrumb {
+        padding: 0
+    }
+    .navbar{
+        padding: 10px;
+    } 
+    .navbar .navbar-brand img{
+        width: 100%;
+    }
+    .top-social{
+        display: none;
+    }
+    .top-contact .top-content ul li {
+        padding-bottom: 11px;  
+    } 
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 8px 15px;
+    } 
+    #mymenu{
+        border-top: 1px dashed #061d38;
+        margin-top: 7px;
+        border-bottom: 1px dashed #061d38;
+        background: #ffebbec9;
+    }
+    .receipt .row .quote_2 {
+        margin: 0;
+    }       
 }

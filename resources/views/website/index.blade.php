@@ -67,7 +67,7 @@
                         </figure>                 
                         <div class="service_content">
                             <a class="course-link" href="{{ROUTE('website.web_design')}}">
-                                <h5>Web Design</h5>
+                                <h5>Web Design <span class="detail-btn"> Detail</span></h5>
                                 <span class="d-block home-opening-courses-box-title-border"></span>
                                 <p class="mb-1 t-red roboto f-500 price">₹7500<span class="old-price">₹10,000</span></p>
                                 <p>35 Students Enrolled </p>
@@ -85,17 +85,19 @@
                             </a>
                             <figcaption>
                                 <div>
-                                    <p class="pretext"><i></i>Basic of Php </p>
-                                    <p class="pretext"><i></i>Login System</p>
-                                    <p class="pretext"><i></i>Design a dynamic site</p>
-                                    <p class="pretext"><i></i>Logic based problem </p>
+                                    <p class="pretext"><i></i>Basics of PHP</p>
+                                    <p class="pretext"><i></i>Advance PHP</p>
+                                    <p class="pretext"><i></i>PHP MVC</p>
+                                    <p class="pretext"><i></i>Laravel</p>
+                                    <p class="pretext"><i></i>PHP Data Objects</p>
+                                    <p class="pretext"><i></i>Live Project</p>
                                     <a class="c-link" href="{{route('website.php_train')}}">Read More</a>
                                 </div>
                             </figcaption>
                         </figure>                    
                         <div class="service_content">
                             <a class="course-link" href="{{route('website.php_train')}}">
-                                <h5>Web Development</h5>
+                                <h5>Web Development <span class="detail-btn"> Detail</span></h5>
                                 <span class="d-block home-opening-courses-box-title-border"></span>
                                 <p class="mb-1 t-red roboto f-500 price">₹12,000<span class="old-price">₹15,000</span></p>
                                 <p>35 Students Enrolled </p>
@@ -113,17 +115,19 @@
                             </a> 
                             <figcaption>
                                 <div>
-                                    <p class="pretext"><i></i>Basic of Php </p>
-                                    <p class="pretext"><i></i>Login System</p>
-                                    <p class="pretext"><i></i>Design a dynamic site</p>
-                                    <p class="pretext"><i></i>Logic based problem </p>
+                                    <p class="pretext"><i></i>Basics of JAVA</p>
+                                    <p class="pretext"><i></i>Basics of Android</p>
+                                    <p class="pretext"><i></i>Learn Material Design</p>
+                                    <p class="pretext"><i></i>Integrating Different API's</p>
+                                    <p class="pretext"><i></i>SQLite</p>
+                                    <p class="pretext"><i></i>Live Project</p>
                                     <a class="c-link" href="{{route('website.andriod')}}">Read More</a>
                                 </div>
                             </figcaption>  
                         </figure>                    
                         <div class="service_content">
                             <a class="course-link" href="{{route('website.andriod')}}">
-                                <h5>Android Development</h5>
+                                <h5>Android Development <span class="detail-btn"> Detail</span></h5>
                                 <span class="d-block home-opening-courses-box-title-border"></span>
                                 <p class="mb-1 t-red roboto f-500 price">₹12,500<span class="old-price">₹15,000</span></p>
                                 <p>35 Students Enrolled </p>

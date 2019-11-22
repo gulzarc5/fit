@@ -103,8 +103,7 @@
                         </div>
                         <div class="footer-contant">
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Hengrabari,
-                                Guwahati, Assam</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Hengrabari, Guwahati, Assam</li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>Call Us: +91-91017 52106 </li>
                                 <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Email Us: info@freshersit.com</li>
                             </ul>
