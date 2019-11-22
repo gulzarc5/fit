@@ -19,53 +19,58 @@
                 <div class="col-sm-6">
                     <!-- Comment Sec End -->
                     <div class="quote_2 comment_form_sec bg-eeec">
-                        <div class="quote_form">
-                            <div class="con-div"><img src="assets/images/check.png" style="width: 9%;"></div><br>
-                            <p>Your Payment was succussful. Please print the receipt for further use.</p>
-                            <div class="row m-o receipt-content">
-                                <div class="col-sm-5">
-                                    <h5><strong>Student Id : </strong></h5>
+                        <div class="quote_form" id="printable">
+                            <div class="con-div"><img src="{{asset('assets/images/check.png')}}" style="width: 9%;"></div><br>
+                            @if (isset($student) && !empty($student))
+                                <p>Your Payment was succussful. Please print the receipt for further use.</p>
+                                <div class="row m-o receipt-content">
+                                    <div class="col-sm-5">
+                                        <h5><strong>Student Id : </strong></h5>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h5>WEB-FIT-{{$student->id}}-2019</h5>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <h5><strong>Transction Id : </strong></h5>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h5>{{$student->payment_id}}</h5>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <h5><strong>Student Name : </strong></h5>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h5>{{$student->name}}</h5>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <h5><strong>Course Applied  : </strong></h5>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h5>{{$student->c_name}}</h5>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <h5><strong>Phone : </strong></h5>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h5>{{$student->mobile}}</h5>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <h5><strong>Application Date : </strong></h5>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h5>{{$student->created_at}}</h5>
+                                    </div>
                                 </div>
-                                <div class="col-sm-7">
-                                    <h5>DF1548GH6</h5>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h5><strong>Transction Id : </strong></h5>
-                                </div>
-                                <div class="col-sm-7">
-                                    <h5>HD145687FG455DYSA</h5>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h5><strong>Student Name : </strong></h5>
-                                </div>
-                                <div class="col-sm-7">
-                                    <h5>Ronit K. Roy</h5>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h5><strong>Course Applied  : </strong></h5>
-                                </div>
-                                <div class="col-sm-7">
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h5><strong>Phone : </strong></h5>
-                                </div>
-                                <div class="col-sm-7">
-                                    <h5>9457891546</h5>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h5><strong>Application Date : </strong></h5>
-                                </div>
-                                <div class="col-sm-7">
-                                    <h5>04/12/2019</h5>
-                                </div>
-                            </div>
-                            <h3 style="margin-top: 10px"><strong>Documents Required</strong></h3>
-                            <p class="pretext" style="margin: 0">Highest Qualification Certificate<b style="color: red">*</b></p>
-                            <p class="pretext" style="margin: 0">Receipt copy<b style="color: red">*</b></p>
-                            <p class="pretext" style="margin: 0">2 passport size photo<b style="color: red">*</b></p>
-                            <p class="pretext" style="margin: 0">Address Proof<b style="color: red">*</b></p>
-                            <div class="con-div"><a style="padding: 7px 23px;" href="http://localhost/fit/public/Receipt" class="index-apply">Print</a></div>
+                                <h3 style="margin-top: 10px"><strong>Documents Required</strong></h3>
+                                <p class="pretext" style="margin: 0">Highest Qualification Certificate<b style="color: red">*</b></p>
+                                <p class="pretext" style="margin: 0">Receipt copy<b style="color: red">*</b></p>
+                                <p class="pretext" style="margin: 0">2 passport size photo<b style="color: red">*</b></p>
+                                <p class="pretext" style="margin: 0">Address Proof<b style="color: red">*</b></p>
+                                <div class="con-div"><a style="padding: 7px 23px;" href="http://localhost/fit/public/Receipt" class="index-apply" onclick="printDiv()">Print</a></div>
+                            @else
+                                <p style="color:red">Sorry !! Payment Failed</p>
+                            @endif
+                            
                         </div>
                     </div>
                     <!-- leave comment section end-->
@@ -77,4 +82,22 @@
     <!-- blog Section End-->
 
     <!-- Contact-us End -->
+
+
+@endsection
+
+@section('script')
+<script type="text/javascript">
+    function printDiv() {
+       var printContents = document.getElementById("printable").innerHTML;
+       var originalContents = document.body.innerHTML;
+  
+       document.body.innerHTML = printContents;
+
+  
+       window.print();
+
+       document.body.innerHTML = originalContents;
+    }
+  </script>
 @endsection

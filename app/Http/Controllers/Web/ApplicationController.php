@@ -99,7 +99,8 @@ class ApplicationController extends Controller
             header('Location: ' . $response['longurl']);
             exit();
         }catch (Exception $e) {
-            print('Error: ' . $e->getMessage());
+            $status = "1";
+            return view('website.receipt',compact('status'));
         }
     }
 
@@ -123,12 +124,15 @@ class ApplicationController extends Controller
             $response = $api->paymentRequestStatus(request('payment_request_id'));
      
             if( !isset($response['payments'][0]['status']) ) {
-             return redirect('website.Home');
+                $status = "1";
+                return view('website.receipt',compact('status'));
             } else if($response['payments'][0]['status'] != 'Credit') {
-             return redirect('website.Home');
+                $status = "1";
+                return view('website.receipt',compact('status'));
             } 
           }catch (\Exception $e) {
-             return redirect('website.Home');
+                $status = "1";
+                return view('website.receipt',compact('status'));
          }
         
         if($response['payments'][0]['status'] == 'Credit') { 
@@ -139,13 +143,19 @@ class ApplicationController extends Controller
                     'payment_status'=>2,
                     'updated_at' => Carbon::now()->setTimezone('Asia/Kolkata')->toDateTimeString(),
                 ]);
-            $student = DB::table('applications')->where('id',$student_id)->first();
+            $student = DB::table('applications')
+                ->select('applications.*','course.name as c_name')
+                ->leftjoin('course','course.id','=','applications.course_id')
+                ->where('applications.id',$student_id)
+                ->first();
             
             $request_info = urldecode("You Have Successfully Paid an Amount of Rs. 500.00. Transaction Id is ".$response['id']." . For Any Query Feel Free To Contact Us 9101752106 Thank you");
             SmsHelpers::smsSend($student->mobile,$request_info);
-            return view('website.about-us');
+
+            return view('website.receipt',compact('student'));
         }else{
-            return view('website.about-us');
+            $status = "1";
+            return view('website.receipt',compact('status'));
         }
         
     }
